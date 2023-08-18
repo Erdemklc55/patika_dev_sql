@@ -109,7 +109,7 @@ SELECT title FROM film WHERE title ILIKE '%t%t%t%t'
  
 ```
  
-SELECT * FROM film WHERE title like 'C%' AND length>90  and rental_rate = 2.99
+SELECT * FROM film WHERE title like 'C%' AND length>90  AND rental_rate = 2.99
  
 ```
 
