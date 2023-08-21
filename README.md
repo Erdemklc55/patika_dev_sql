@@ -113,3 +113,56 @@ SELECT * FROM film WHERE title like 'C%' AND length>90  AND rental_rate = 2.99
  
 ```
 
+## SQL Ödev 04 |DISTINCT ve COUNT
+ 
+<br>
+ 
+1-) <strong>film </strong>tablosunda bulunan <strong>replacement_cost  </strong> sütununda bulunan birbirinden farklı değerleri sıralayınız.
+ 
+```
+ 
+SELECT DISTINCT replacement_cost  FROM film 
+ 
+```
+
+<br>
+
+2-) <strong>film </strong>tablosunda bulunan <strong>replacement_cost  </strong> sütununda birbirinden farklı kaç tane veri vardır?
+ 
+```
+ 
+SELECT COUNT (DISTINCT replacement_cost) FROM film 
+ 
+```
+
+<br>
+
+3-) <strong>film </strong>tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
+ 
+```
+ 
+SELECT COUNT(*) FROM film WHERE title LIKE 'T%' AND rating = 'G'
+ 
+```
+
+<br>
+
+4-) <strong>country </strong>tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
+ 
+```
+ 
+SELECT COUNT (country) from country WHERE country like '_____''
+ 
+```
+
+<br>
+
+5-) <strong>city </strong>tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
+ 
+```
+ 
+SELECT COUNT (DISTINCT city) FROM city WHERE city ILIKE '%r'
+ 
+```
+
+
