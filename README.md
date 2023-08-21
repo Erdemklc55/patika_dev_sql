@@ -151,7 +151,7 @@ SELECT COUNT(*) FROM film WHERE title LIKE 'T%' AND rating = 'G'
  
 ```
  
-SELECT COUNT (country) from country WHERE country like '_____''
+SELECT COUNT (country) FROM country WHERE country like '_____''
  
 ```
 
