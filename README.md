@@ -164,5 +164,34 @@ SELECT COUNT (country) FROM country WHERE country like '_____''
 SELECT COUNT (DISTINCT city) FROM city WHERE city ILIKE '%r'
  
 ```
+## SQL Ödev 04 | LIMIT OFFSET ve ORDER BY
+ 
+<br>
+ 
+1-) <strong>film </strong>tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
+ 
+```
+ 
+SELECT title, length FROM film WHERE title LIKE '%n' ORDER BY length DESC LIMIT 5;
+ 
+```
+<br>
+ 
+2-) <strong>film </strong>tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) sıralayınız.
+ 
+```
+ 
+SELECT title FROM film WHERE title LIKE '%n' ORDER BY length DESC OFFSET 2 LIMIT 5 ;
+ 
+```
+<br>
+ 
+3-) <strong>customer </strong>tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.
+ 
+```
+ 
+SELECT * FROM customer WHERE store_id = 1 ORDER by last_name DESC LIMIT 4;
+
+```
 
 
