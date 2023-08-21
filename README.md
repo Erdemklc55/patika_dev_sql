@@ -164,7 +164,7 @@ SELECT COUNT (country) FROM country WHERE country like '_____''
 SELECT COUNT (DISTINCT city) FROM city WHERE city ILIKE '%r'
  
 ```
-## SQL Ödev 04 | LIMIT OFFSET ve ORDER BY
+## SQL Ödev 05 |LIMIT OFFSET ve ORDER BY
  
 <br>
  
