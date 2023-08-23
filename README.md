@@ -423,5 +423,49 @@ ON rental.customer_id = customer.customer_id;
  
 ```
 
+<br>
+
+## SQL Ödev 10 |LEFT JOIN, RIGHT JOIN, FULL JOIN ile Tablo Birleştirme
+ 
+<br>
+ 
+1-) <strong>city  </strong> tablosu ile <strong>country </strong> tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.
+
+```
+
+SELECT city, country from city LEFT JOIN country ON city.country_id = country.country_id;
+ 
+```
+
+<br>
+
+2-) <strong>customer  </strong> tablosu ile <strong>payment </strong> tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz 
+RIGHT JOIN sorgusunu yazınız.
+
+```
+
+SELECT payment.payment_id, customer.first_name, customer.last_name
+FROM customer RIGHT JOIN payment
+ON customer.customer_id = payment.customer_id;
+ 
+```
+
+<br>
+
+3-) <strong>customer  </strong> tablosu ile <strong>rental </strong>     tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz 
+FULL JOIN sorgusunu yazınız.
+
+```
+
+SELECT rental.rental_id, customer.first_name, customer.last_name
+FROM customer FULL JOIN rental
+ON customer.customer_id = rental.customer_id;
+ 
+```
+
+<br>
+
+
+
 
 
