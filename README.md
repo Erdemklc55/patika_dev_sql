@@ -465,6 +465,88 @@ ON customer.customer_id = rental.customer_id;
 
 <br>
 
+## SQL Ödev 11 |UNION INTERSECT ve EXCEPT
+ 
+<br>
+ 
+1-) <strong>actor  </strong> ve <strong>customer </strong> tablolarında bulunan <strong>first_name </strong> sütunları için tüm verileri sıralayalım.
+
+```
+
+(
+SELECT first_name FROM actor
+)
+UNION
+(
+SELECT first_name FROM customer
+)
+ 
+```
+
+<br>
+
+2-) <strong>actor  </strong> ve <strong>customer </strong> tablolarında bulunan <strong>first_name </strong> sütunları için kesişen verileri sıralayalım.
+
+```
+
+(
+SELECT first_name FROM actor
+)
+INTERSECT
+(
+SELECT first_name FROM customer
+)
+ 
+```
+
+<br>
+
+3-) <strong>actor  </strong> ve <strong>customer </strong> tablolarında bulunan <strong>first_name </strong> sütunları için ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım.
+
+```
+(
+SELECT first_name FROM actor
+)
+EXCEPT
+(
+SELECT first_name FROM customer
+)
+ 
+```
+
+<br>
+
+4-) İlk 3 sorguyu tekrar eden veriler için de yapalım.
+
+```
+(
+SELECT first_name FROM actor
+)
+UNION ALL
+(
+SELECT first_name FROM customer
+);
+
+(
+SELECT first_name FROM actor
+)
+INTERSECT ALL
+(
+SELECT first_name FROM custome
+);
+
+(
+SELECT first_name FROM actor
+)
+EXCEPT ALL
+(
+SELECT first_name FROM customer
+);
+ 
+```
+
+<br>
+
 
 
 
