@@ -387,5 +387,41 @@ DELETE FROM employee WHERE email ='scourcey13@usgs.gov'
 ```
 <br>
 
+## SQL Ödev 09 | INNER JOIN ile Tablo Birleştirme
+ 
+<br>
+ 
+1-) <strong>city  </strong> tablosu ile <strong>country </strong> tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+```
+
+SELECT city, country FROM city JOIN country ON city.country_id = country.country_id;
+ 
+```
+
+<br>
+ 
+2-) <strong>customer  </strong> tablosu ile <strong>payment </strong> tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz 
+INNER JOIN sorgusunu yazınız.
+
+```
+
+SELECT customer.first_name, customer.last_name, payment.payment_id 
+FROM customer INNER JOIN payment 
+ON customer.customer_id = payment.customer_id;
+ 
+```
+<br>
+ 
+3-) <strong>customer  </strong> tablosu ile <strong>rental </strong> tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+```
+
+SELECT rental.rental_id, customer.first_name, customer.last_name
+FROM rental INNER JOIN customer
+ON rental.customer_id = customer.customer_id;
+ 
+```
+
 
 
