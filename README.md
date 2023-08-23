@@ -43,7 +43,7 @@ SELECT * FROM film WHERE length <= 50 AND NOT (rental_rate = 2.99 OR rental_rate
  
 ```
 
-## SQL Ödev 02 
+## SQL Ödev 02 |BETWEEN - AND Yapısı ve In Operatörü
  
 <br>
  
