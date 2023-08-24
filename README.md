@@ -547,7 +547,7 @@ SELECT first_name FROM customer
 
 <br>
 
-## SQL Ödev 11 |UNION INTERSECT ve EXCEPT
+## SQL Ödev 12 |Sorgu Senaryoları
  
 <br>
  
